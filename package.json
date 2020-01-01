@@ -1,0 +1,23 @@
+{
+  "name": "security.txt",
+  "version": "1.0.0",
+  "description": "Cross-platform browser extension for security.txt and humans.txt files.",
+  "homepage": "https://www.harmless.systems/products/security-txt.html",
+  "main": "Gruntfile.js",
+  "repository": "git@github.com:HarmlessSystems/security.txt.git",
+  "author": "Harmless Systems <info@harmless.systems>",
+  "license": "BSD-2-Clause",
+  "scripts": {
+    "build": "node_modules/.bin/grunt"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-mkdir": "^1.0.0",
+    "load-grunt-tasks": "^5.1.0",
+    "webextension-polyfill": "^0.6.0"
+  }
+}

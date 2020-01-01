@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="chrome://browser/content/extension.css"/>
+  </head>
+  <body>
+    <div class="tabs">
+      <input type="radio" id="securitytab" name="tabs" checked>
+      <label id="securitytablabel" for="securitytab">security.txt</label>
+      <input type="radio" id="humanstab" name="tabs">
+      <label id="humanstablabel" for="humanstab">humans.txt</label>
+      <div id="securitytxt">
+        <button type="button" data-i18n="copy_clipboard"></button>
+        <textarea spellcheck="false"></textarea>
+      </div>
+      <div id="humanstxt">
+        <button type="button" data-i18n="copy_clipboard"></button>
+        <textarea spellcheck="false"></textarea>
+      </div>
+    </div>
+    <script src="js/global.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

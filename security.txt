@@ -1,0 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@harmless.systems
+Encryption: https://www.harmless.systems/pgp.txt
+Preferred-Languages: en
+Canonical: https://www.harmless.systems/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEeMmm6tovSoPQaXo1LPLT0YMTN3sFAl4AT5cACgkQLPLT0YMT
+N3u+8w//ekTyhm0bK4M4jMm27edj+gyC6XQJwTi7/PV1LsTRrZblRZK/1ZkjUztc
+4BdgMMlOHVwYHGDqOQR8p4vSzb7sFYKYBBiA6Mh7sLr2ekZWDj5d68/k5cTRNrGD
+8hU6ts8y6q3rgAcSygiYOZglcA64Gy2XW8Rqn8udndrqfB3Llu5SKMzQ9M2Henop
+Ih01rTkIsPs8JVEw+JjZW+bn1/5h3pqNv5lpME/X/Y4hbWbHcLl7/u4GqwYnJm4R
+QoEKq3iTnrTZYKJyF+57kZq/VXHQ8OIEKG4CMge3uVqSRRZinimvVsq9TCqwCc2E
+07+SKkib6Nvn79KYN6Q0+X6FqhKloPKIjEbdM+RUuFnLl/9/xdiwnSZG3FuAQD3S
+LSzDoL/V7s1diQoM5b7Daf/Ho+iH60Vm2QECcuAuLg/UCpdaS0MyEEua1jTLVnxq
+Z8PomG+mH6vL9tCd8EZ+uuJYKTL3EOLywYMa115kUvoUl4rxtaVOWCIEKudeGWLp
+2iYrgERKX0uFIEYwAHDDtXDq2sVsHybxXW7ViiXyiST+na7LYyMA8c4EUQ6YTkZB
+hOAY+7222wY9jAmpxbGTS9LHBMrd6ObaRovfR8y62I+UYyyMMOyTcBXeM6wzfIJj
+nbGo6Xyxd0xGVCJDYHHbT/c5vLr598B8Vujqi/NoeYE61fNe0gA=
+=j+Yx
+-----END PGP SIGNATURE-----

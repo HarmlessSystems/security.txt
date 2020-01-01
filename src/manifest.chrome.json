@@ -1,0 +1,23 @@
+{
+  "_notes_chrome_style": "https://developer.chrome.com/extensions/manifest",
+  "page_action": {
+    "chrome_style": true
+  },
+  
+  "_notes_background": "https://github.com/mozilla/webextension-polyfill",
+  "background": {
+    "scripts": [
+      "js/browser-polyfill.js",
+      "js/global.js",
+      "js/background.js"
+    ]
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": false
+  },
+  
+  "offline_enabled": true
+}

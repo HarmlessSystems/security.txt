@@ -1,0 +1,14 @@
+{  
+  "background": {
+    "page" : "background.html",
+    "persistent": false
+  },
+
+  "_notes_-ms-preload": "https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/porting-chrome-extensions#api-bridges",
+  "-ms-preload": {
+    "backgroundScript": "js/backgroundScriptsAPIBridge.js",
+    "contentScript": "js/contentScriptsAPIBridge.js"
+  },
+
+  "options_page": "options.html"
+}

@@ -1,0 +1,14 @@
+{
+  "curly": true, 
+  "eqeqeq": true,
+  "latedef": true,
+  "undef": true,
+  "unused": true,
+  "browser": true,
+  "esversion": 6,
+  "globals": {
+    "browser": true,
+    "console": true,
+    "chrome": true
+  }
+}
