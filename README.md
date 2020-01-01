@@ -1,9 +1,14 @@
-security.txt
+# security.txt
+
 Cross-platform browser extension for security.txt and humans.txt files.
 
 As you browse the web, this extension will check for a [security.txt](https://tools.ietf.org/html/draft-foudil-securitytxt-08) 
 and [humans.txt](http://humanstxt.org) file on each site you visit. If either file exists, the pageAction can be clicked to 
 display the files.
+
+## Building locally
+
+``yarn && yarn run build``
 
 ## Developer Quick Reference
 
