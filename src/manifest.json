@@ -7,7 +7,6 @@
   "manifest_version": 2,
   "description": "__MSG_extension_description__",
   "default_locale": "en",
-  "content_security_policy": "default-src 'self'; img-src 'self' data:;",
   "incognito": "split",
   "icons": {
     "19": "img/19.png",
@@ -27,7 +26,7 @@
     "https://*/security.txt",
     "https://*/humans.txt",
     "tabs",
-    "activeTab"
+    "storage"
   ],
   "page_action": {
     "default_icon": {

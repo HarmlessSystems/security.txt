@@ -1,3 +1,5 @@
+/* jshint unused: false */
+
 const defaultOptions = {
   display_mode: 'INLINE',
   check_humanstxt: 'ON',
@@ -5,18 +7,9 @@ const defaultOptions = {
   host_cache_ttl: '24H'
 };
 
-/* jshint unused: false */
-function getOption(option) {
-  const result = localStorage.getItem(option);
-  if (result !== null) {
-    return result;
-  }
-  return defaultOptions[option];
-}
-
 function i18n(msg) {
   return ((window.chrome && typeof window.chrome.i18n === 'object') ?
-      chrome.i18n.getMessage(msg) : msg) || msg;
+    chrome.i18n.getMessage(msg) : msg) || msg;
 }
 
 const i18nTag = {
