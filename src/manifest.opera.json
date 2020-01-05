@@ -1,5 +1,14 @@
 {
+  "_notes_page_action": "Opera doesn't suffer from the hide/show pageAction bug in Chrome/Edge",
   "page_action": {
+    "default_icon": {
+      "16": "img/info.16.png",
+      "19": "img/info.19.png",
+      "24": "img/info.24.png",
+      "32": "img/info.32.png",
+      "48": "img/info.48.png",
+      "96": "img/info.96.png"
+    },
     "chrome_style": true
   },
   

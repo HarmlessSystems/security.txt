@@ -1,4 +1,4 @@
-/* globals i18n */
+/* globals i18n, BROWSER_QUIRKS */
 
 const httpRegExp = new RegExp('^http');
 
@@ -81,7 +81,6 @@ function fetchFiles(tabId, tab) {
       }, fetchError);
 
     }, fetchError).finally(() => {
-      console.log('finalResults', finalResults);
 
       let title = i18n((humansTxtCheck) ?
         'found_nothing' : 'not_found_security_txt');
@@ -94,7 +93,7 @@ function fetchFiles(tabId, tab) {
         title = i18n('found_security_and_humans_txt');
       }
       
-      // XXX Need to change icons for Chrome/Edge bug with pageAction.hide()
+      // Mote that we need to change icons for Chrome/Edge bug with pageAction.hide()
       // interesting enough, the bug doesn't impact Opera
       if (finalResults.security || finalResults.humans) {
         localStorage.setItem(finalResults.host, JSON.stringify(finalResults));
@@ -103,6 +102,20 @@ function fetchFiles(tabId, tab) {
           tabId: tabId,
           popup: 'popup.html#' + finalResults.host
         });
+
+        if (BROWSER_QUIRKS === 'chrome' || BROWSER_QUIRKS === 'edge') {
+          browser.pageAction.setIcon({
+            tabId: tabId,
+            path: {
+              '16': 'img/info.16.png',
+              '19': 'img/info.19.png',
+              '24': 'img/info.24.png',
+              '32': 'img/info.32.png',
+              '48': 'img/info.48.png',
+              '96': 'img/info.96.png'
+            }
+          });
+        }
       } else {
         localStorage.removeItem(finalResults.host);
         browser.pageAction.hide(tabId);
@@ -113,6 +126,20 @@ function fetchFiles(tabId, tab) {
           // the extension will receive pageAction.onClicked events.
           popup: ''
         });
+
+        if (BROWSER_QUIRKS === 'chrome' || BROWSER_QUIRKS === 'edge') {
+          browser.pageAction.setIcon({
+            tabId: tabId,
+            path: {
+              '16': 'img/info.inactive.16.png',
+              '19': 'img/info.inactive.19.png',
+              '24': 'img/info.inactive.24.png',
+              '32': 'img/info.inactive.32.png',
+              '48': 'img/info.inactive.48.png',
+              '96': 'img/info.inactive.96.png'
+            }
+          });
+        }
       }
 
       browser.pageAction.setTitle({

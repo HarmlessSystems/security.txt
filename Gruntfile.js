@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('manifests', 'Combine manifest.json files', function () {
+  grunt.registerTask('manifests', 'Combine manifest.json files', () => {
     const {merge} = require('lodash/object');
     function rmNotes(obj) {
       const notesRegExp = new RegExp('^_notes_');
@@ -94,6 +94,13 @@ module.exports = function(grunt) {
     });
   });
 
+  grunt.registerTask('quirks', 'Append browser global to work around quirks', () => {
+    const {appendFileSync} = require('fs');
+    browsers.forEach((browser) => {
+      appendFileSync(`build/${browser}/js/global.js`, `\nconst BROWSER_QUIRKS = '${browser}';`);
+    });
+  });
+
   grunt.registerTask('default', [
     'jshint:extension',
     'jshint:node',
@@ -101,6 +108,7 @@ module.exports = function(grunt) {
     'mkdir',
     'manifests',
     'copy',
-    'copy:polyfill'
+    'copy:polyfill',
+    'quirks'
   ]);
 };

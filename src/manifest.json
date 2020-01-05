@@ -28,18 +28,7 @@
     "tabs",
     "storage"
   ],
-  "page_action": {
-    "default_icon": {
-      "19": "img/19.png",
-      "20": "img/20.png",
-      "30": "img/30.png",
-      "35": "img/35.png",
-      "38": "img/38.png",
-      "40": "img/40.png",
-      "48": "img/48.png",
-      "96": "img/96.png"
-    }
-  },
+  "page_action": {},
   "background": {
     "persistent": false
   }

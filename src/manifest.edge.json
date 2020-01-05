@@ -1,9 +1,18 @@
 {
   "_notes_chrome_style": "https://developer.chrome.com/extensions/manifest",
   "page_action": {
+    "default_icon": {
+      "16": "img/info.inactive.16.png",
+      "19": "img/info.inactive.19.png",
+      "24": "img/info.inactive.24.png",
+      "32": "img/info.inactive.32.png",
+      "48": "img/info.inactive.48.png",
+      "96": "img/info.inactive.96.png"
+    },
     "chrome_style": true
   },
   
+  "_notes_background": "https://github.com/mozilla/webextension-polyfill",
   "background": {
     "scripts": [
       "js/browser-polyfill.js",
