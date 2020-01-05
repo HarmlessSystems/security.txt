@@ -61,6 +61,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('manifests', 'Combine manifest.json files', function () {
+    const {merge} = require('lodash/object');
     function rmNotes(obj) {
       const notesRegExp = new RegExp('^_notes_');
       Object.keys(obj).forEach((key) => {
@@ -87,7 +88,7 @@ module.exports = function(grunt) {
       const manifestCopy = Object.assign({}, manifest);
       const filePath = `build/${browser}/manifest.json`;
       rmNotes(browserManifest);
-      Object.assign(manifestCopy, browserManifest);
+      merge(manifestCopy, browserManifest);
       grunt.file.write(filePath, JSON.stringify(manifestCopy, null, 2));
       grunt.log.ok(filePath);
     });

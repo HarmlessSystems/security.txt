@@ -53,18 +53,18 @@ body {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
 }
-#securitytxt, #humanstxt{
+#securityTxt, #humansTxt{
   display: none;
   border-top: 1px solid #bbb;
   padding:5px;
 }
-#securitytab:checked ~ #securitytxt,
-#humanstab:checked ~ #humanstxt {
+#securityTab:checked ~ #securityTxt,
+#humansTab:checked ~ #humansTxt {
   display: block;
 }
 
 textarea {
-  padding-top: 25px;
+  padding-top: 5px;
   border:none;
   width:100%;
   min-height:300px;
@@ -78,10 +78,10 @@ textarea:focus {
 }
 
 button {
-  opacity: 0.45;
+  opacity: 0.8;
   position:absolute;
   right:20px;
-  top:55px;
+  top:15px;
   background:rgba(225,225,225,0.8);
   cursor: pointer;
 }

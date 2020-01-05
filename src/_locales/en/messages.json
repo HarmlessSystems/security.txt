@@ -7,22 +7,6 @@
     "message": "Preferences",
     "description" : "Title text of options page"
   },
-  "display_mode": {
-    "message": "Display mode: ",
-    "description" : "Label text for display mode selection drop-down"
-  },
-  "display_mode_INLINE": {
-    "message": "In the same window",
-    "description" : "Description for INLINE display mode"
-  },
-  "display_mode_NEW_TAB": {
-    "message": "In a new tab",
-    "description" : "Description for NEW_TAB display mode"
-  },
-  "display_mode_NEW_WINDOW": {
-    "message": "In a new window",
-    "description" : "Description for NEW_WINDOW display mode"
-  },
   "check_humanstxt": {
     "message": "Also check for a humans.txt file: ",
     "description" : "Label text for humans.txt option"
@@ -79,6 +63,14 @@
     "message": "Reset all preferences to default values",
     "description" : "Button text to set all options to the default"
   },
+  "found_nothing": {
+    "message": "No security.txt or humans.txt found.",
+    "description" : "pageAction title when neither humans.txt or security.txt is found."
+  },
+  "not_found_security_txt": {
+    "message": "No security.txt found",
+    "description" : "pageAction title when only security.txt is not found and humans.txt check is disabled."
+  },
   "found_security_txt": {
     "message": "Found security.txt",
     "description" : "pageAction title when only security.txt is found."
@@ -99,9 +91,13 @@
     "message": "Release Notes",
     "description" : "Page title for release notes page shown on extension update"
   },
-  "copy_clipboard": {
-    "message": "Copy to clipboard",
-    "description" : "Text for button to copy text to clipboard."
+  "copy_security_clipboard": {
+    "message": "Copy security.txt to clipboard",
+    "description" : "Text for button to copy security.txt text to clipboard."
+  },
+  "copy_humans_clipboard": {
+    "message": "Copy humans.txt to clipboard",
+    "description" : "Text for button to copy humans.txt text to clipboard."
   },
   "copied_humans_to_clipboard": {
     "message": "Copied humans.txt!",
