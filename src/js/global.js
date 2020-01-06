@@ -1,8 +1,7 @@
 /* jshint unused: false */
 
 const defaultOptions = {
-  check_humanstxt: 'ON',
-  color_theme: 'AUTO',
+  check_humanstxt: 'ON'
 };
 
 function i18n(msg) {
