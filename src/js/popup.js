@@ -2,8 +2,6 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(new URL(window.location).search);
-  console.log('popup', window.location, new URL(window.location), params);
-  console.log('popup', params.get('security'), params.get('humans'));
 
   const securityTxt = document.querySelector('#securityTxt > textarea');
   const securityTab = document.querySelector('#securityTabLabel');

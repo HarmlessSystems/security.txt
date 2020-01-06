@@ -673,3 +673,11 @@ noscript{
 ::selection{
   background:rgba(0, 100, 193, 0.25);
 }
+
+p > img {
+  display: inline;
+  vertical-align: bottom;
+  float: none;
+  margin-bottom: 0;
+  margin-left: 0;
+}

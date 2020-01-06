@@ -19,46 +19,6 @@
     "message": "Disabled",
     "description" : "Description for disabling check_humanstxt option"
   },
-  "color_theme": {
-    "message": "Preferred color theme",
-    "description" : "Label text for color theme option"
-  },
-  "color_theme_AUTO": {
-    "message": "Automatic",
-    "description" : "Automatic based on system theme"
-  },
-  "color_theme_DARK": {
-    "message": "Dark Mode",
-    "description" : "Dark theme"
-  },
-  "color_theme_LIGHT": {
-    "message": "Light Mode",
-    "description" : "Light theme"
-  },
-  "host_cache_ttl": {
-    "message": "Host cache time-to-live",
-    "description" : "How long should hostnames be cached?"
-  },
-  "host_cache_ttl_10M": {
-    "message": "10 minutes or until browser is closed",
-    "description" : "Cache for 10 minutes"
-  },
-  "host_cache_ttl_1H": {
-    "message": "1 hour or until browser is closed",
-    "description" : "Cache for 1 hour"
-  },
-  "host_cache_ttl_24H": {
-    "message": "1 day or until browser is closed",
-    "description" : "Cache for 1 day"
-  },
-  "host_cache_ttl_ALWAYS": {
-    "message": "Until browser is closed",
-    "description" : "Cache until process is terminated"
-  },
-  "host_cache_ttl_NEVER": {
-    "message": "Disable in_memory cache",
-    "description" : "Perform no caching"
-  },
   "reset_default": {
     "message": "Reset all preferences to default values",
     "description" : "Button text to set all options to the default"
@@ -106,5 +66,64 @@
   "copied_security_to_clipboard": {
     "message": "Copied security.txt!",
     "description" : "Message shown when secxurity.txt text has been copied to the clipboard"
+  },
+  "what_is_security_txt": {
+    "message": "What is security.txt?",
+    "description" : "Headline for description of the security.txt initiative."
+  },
+  "what_is_security_txt_content": {
+    "message": "security.txt is a proposed standard which provides a means for websites and software authors to define their security policies. This is useful to security researchers or anyone who would like to properly disclose a vulnerability to the owners of the website or software.",
+    "description" : "Headline for description of the security.txt initiative."
+  },
+  "what_is_humans_txt": {
+    "message": "What is humans.txt?",
+    "description" : "Headline for description of the humans.txt initiative."
+  },
+  "what_is_humans_txt_content": {
+    "message": "humans.txt is a less formal initiative for providing human-readable information about the authors of the website.",
+    "description" : "Headline for description of the humans.txt initiative."
+  },
+  "how_does_it_work": {
+    "message": "How does the browser extension work?",
+    "description" : "Headline for description of the browser extension works."
+  },
+  "how_does_it_work_content_pre": {
+    "message": "As you browse the web, and navigate to different websites, the browser extension checks the website to see if it supports either type of file. If it does, an ",
+    "description" : "Content explaining how the browser extension works (before the inline icon)."
+  },
+  "how_does_it_work_content_post": {
+    "message": " icon is shown in the URL bar. You can click this icon to view more details about the text files that were located.",
+    "description" : "Content explaining how the browser extension works (after the inline icon)."
+  },
+  "more_info": {
+    "message": "More information",
+    "description" : "Headline for description of where the user can find more information about the browser extension."
+  },
+  "more_info_content": {
+    "message": "You can find more information about security.txt extension on our blog post and initial release announcement.",
+    "description" : "Details and a link to more information"
+  },
+  "feedback_appreciated": {
+    "message": "We appreciate your feedback",
+    "description" : "Headline for section describing where the user can submit their feedback or any issues."
+  },
+  "feedback_pre_email": {
+    "message": "If you encounter any issues using this extension or would like to contact us with any feedback or suggestions you can reach us by email at: ",
+    "description" : "text show before the email address link where feedback can be submitted."
+  },
+  "feedback_pre_github": {
+    "message": "If you have a Github account, you can also open an issue on this extension's Github page at: ",
+    "description" : "text show before the Github page link where feedback can be submitted."
   }
 }
+
+
+
+
+
+
+
+
+
+
+
