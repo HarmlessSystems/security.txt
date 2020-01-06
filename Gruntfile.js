@@ -46,9 +46,7 @@ module.exports = function(grunt) {
           jshintrc: '.jshintrc'
         },
         src: [
-          'src/js/**.js',
-          '!src/js/backgroundScriptsAPIBridge.js',
-          '!src/js/contentScriptsAPIBridge.js'
+          'src/js/**.js'
         ]
       },
       node: {
@@ -101,9 +99,13 @@ module.exports = function(grunt) {
     });
   });
 
-  grunt.registerTask('default', [
+  grunt.registerTask('lint', [
     'jshint:extension',
     'jshint:node',
+  ]);
+
+  grunt.registerTask('default', [
+    'lint',
     'clean',
     'mkdir',
     'manifests',

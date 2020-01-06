@@ -1,15 +1,12 @@
 /* jshint unused: false */
 
 const defaultOptions = {
-  display_mode: 'INLINE',
   check_humanstxt: 'ON',
   color_theme: 'AUTO',
-  host_cache_ttl: '24H'
 };
 
 function i18n(msg) {
-  return ((window.chrome && typeof window.chrome.i18n === 'object') ?
-    chrome.i18n.getMessage(msg) : msg) || msg;
+  return browser.i18n.getMessage(msg) || msg;
 }
 
 const i18nTag = {

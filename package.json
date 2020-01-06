@@ -8,7 +8,8 @@
   "author": "Harmless Systems <info@harmless.systems>",
   "license": "BSD-2-Clause",
   "scripts": {
-    "build": "node_modules/.bin/grunt"
+    "build": "grunt",
+    "lint": "grunt lint"
   },
   "devDependencies": {
     "grunt": "^1.0.4",

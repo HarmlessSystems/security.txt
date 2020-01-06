@@ -9,14 +9,10 @@
   "default_locale": "en",
   "incognito": "split",
   "icons": {
-    "19": "img/19.png",
-    "20": "img/20.png",
-    "30": "img/30.png",
-    "35": "img/35.png",
-    "38": "img/38.png",
-    "40": "img/40.png",
-    "48": "img/48.png",
-    "96": "img/96.png"
+    "16": "img/info.16.png",
+    "48": "img/info.48.png",
+    "96": "img/info.96.png",
+    "128": "img/info.128.png"
   },
   "permissions": [
     "http://*/.well-known/security.txt",

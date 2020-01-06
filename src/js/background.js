@@ -16,45 +16,34 @@ function fetchError(error) {
 function fetchFiles(tabId, tab) {
   const tabURL = new URL(tab.url);
   const host = `${tabURL.protocol}//${tabURL.host}`;
+  const fetchOptions = {method: 'HEAD'};
 
   const finalResults = {
-    now: Date.now(),
-    host: tabURL.host,
-    security: false,
-    humans: false
+    security: '',
+    humans: ''
   };
 
   let humansTxtCheck = true;
 
-  fetch(`${host}/.well-known/security.txt`).then((result) => {
+  fetch(`${host}/.well-known/security.txt`, fetchOptions).then((result) => {
 
-    console.log('/.well-known/security.txt', result.status,
+    console.log(`${host}/.well-known/security.txt`, result.status,
       result.headers.get('Content-Type'));
 
     if (!result.ok || !isPlainText(result)) {
 
-      return fetch(`${host}/security.txt`).then((result) => {
+      return fetch(`${host}/security.txt`, fetchOptions).then((result) => {
 
-        console.log('/security.txt', result.status,
+        console.log(`${host}/security.txt`, result.status,
           result.headers.get('Content-Type'));
 
         if (result.ok && isPlainText(result)) {
-          result.text().then((text) => {
-            finalResults.security = {
-              path: `${host}/security.txt`,
-              text
-            };
-          });
+          finalResults.security = `${host}/security.txt`;
         }
       }, fetchError);
     }
 
-    return result.text().then((text) => {
-      finalResults.security = {
-        path: `${host}/.well-known/security.txt`,
-        text
-      };
-    });
+    finalResults.security =`${host}/.well-known/security.txt`;
 
   }, fetchError).finally(() => {
 
@@ -65,18 +54,17 @@ function fetchFiles(tabId, tab) {
         return console.log('humans.txt check disabled');
       }
 
-      return fetch(`${host}/humans.txt`).then((result) => {
+      // XXX I've encountered at least one site (netflix.com) where a HEAD 
+      // doesn't work on a humans.txt file (403 response). While odd, in all 
+      // fairness, the "humans.txt" files is inteded for "humans" who wouldn't
+      // be making HEAD requests but rather navigating to the URL manually...
+      return fetch(`${host}/humans.txt`/*, fetchOptions*/).then((result) => {
 
-        console.log('/humans.txt', result.status,
+        console.log(`${host}/humans.txt`, result.status,
           result.headers.get('Content-Type'));
 
         if (result.ok && isPlainText(result)) {
-          return result.text().then((text) => {
-            finalResults.humans = {
-              path: `${host}/humans.txt`,
-              text
-            };
-          });
+          finalResults.humans = `${host}/humans.txt`;
         }
       }, fetchError);
 
@@ -92,7 +80,7 @@ function fetchFiles(tabId, tab) {
       } else if (finalResults.security && finalResults.humans) {
         title = i18n('found_security_and_humans_txt');
       }
-      
+
       // Mote that we need to change icons for Chrome/Edge bug with pageAction.hide()
       // interesting enough, the bug doesn't impact Opera
       if (finalResults.security || finalResults.humans) {
@@ -100,7 +88,8 @@ function fetchFiles(tabId, tab) {
         browser.pageAction.show(tabId);
         browser.pageAction.setPopup({
           tabId: tabId,
-          popup: 'popup.html#' + finalResults.host
+          popup: `popup.html?security=${finalResults.security}` +
+            `&humans=${finalResults.humans}`
         });
 
         if (BROWSER_QUIRKS === 'chrome' || BROWSER_QUIRKS === 'edge') {
@@ -117,7 +106,6 @@ function fetchFiles(tabId, tab) {
           });
         }
       } else {
-        localStorage.removeItem(finalResults.host);
         browser.pageAction.hide(tabId);
         browser.pageAction.setPopup({
           tabId: tabId,
@@ -158,7 +146,7 @@ function tabsOnUpdated(tabId, changeInfo, tab) {
 
 function runtimeOnInstalled(details) {
 
-  // process each existing tab that's open when the extension is installed
+  // Process each existing tab that's open when the extension is installed
   browser.tabs.query({}).then((tabs) => {
     tabs.forEach((tab) => {
       if (httpRegExp.test(tab.url)) {

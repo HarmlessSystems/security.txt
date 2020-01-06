@@ -1,7 +1,9 @@
-/* globals i18n, i18nHydrate */
+/* globals i18n, i18nHydrate, URLSearchParams */
 
 window.addEventListener('DOMContentLoaded', () => {
-  const host = document.location.hash.replace('#', '');
+  const params = new URLSearchParams(new URL(window.location).search);
+  console.log('popup', window.location, new URL(window.location), params);
+  console.log('popup', params.get('security'), params.get('humans'));
 
   const securityTxt = document.querySelector('#securityTxt > textarea');
   const securityTab = document.querySelector('#securityTabLabel');
@@ -15,43 +17,43 @@ window.addEventListener('DOMContentLoaded', () => {
   const clipboardHumans = document.querySelector('#humansTxt button');
   const msgTimeout = 3000;
 
-  let hostJSON = localStorage.getItem(host);
-  let hostData;
 
-  i18nHydrate();
-
-  if (hostJSON) {
-    try {
-      hostData = JSON.parse(hostJSON);
-    } catch (e) {
-      console.error(host, hostJSON, e);
-      return;
-    }
-  }
-
-  if (hostData.security) {
-    securityTxt.value = hostData.security.text;
+  if (params.get('security')) {
+    fetch(params.get('security')).then((result) => {
+      result.text().then((text) => {
+        securityTxt.value = text;
+        securityTab.title = params.get('security');
+      });
+    });
   } else {
     securityTab.style.display = 'none';
   }
 
-  if (hostData.humans) {
-    humansTxt.value = hostData.humans.text;
+  if (params.get('humans')) {
+    fetch(params.get('humans')).then((result) => {
+      result.text().then((text) => {
+        humansTxt.value = text;
+        humansTab.title = params.get('humans');
+        if (!params.get('security')) {
+          securityInput.checked = false;
+          humansInput.checked = true;
+        }
+      });
+    });
   } else {
     humansTab.style.display = 'none';
   }
 
-  if (hostData.humans && !hostData.security) {
-    securityInput.checked = false;
-    humansInput.checked = true;
-  }
+  i18nHydrate();
 
   clipboardSecurity.addEventListener('click', () => {
     securityTxt.select();
     document.execCommand('copy');
     clipboardSecurity.innerText = i18n('copied_security_to_clipboard');
+    clipboardSecurity.disabled = true;
     setTimeout(() => {
       clipboardSecurity.innerText = i18n('copy_security_clipboard');
+      clipboardSecurity.disabled = false;
     }, msgTimeout);
   });
 
@@ -59,8 +61,10 @@ window.addEventListener('DOMContentLoaded', () => {
     humansTxt.select();
     document.execCommand('copy');
     clipboardHumans.innerText = i18n('copied_humans_to_clipboard');
+    clipboardHumans.disabled = true;
     setTimeout(() => {
       clipboardHumans.innerText = i18n('copy_humans_clipboard');
+      clipboardHumans.disabled = false;
     }, msgTimeout);
   });
 
