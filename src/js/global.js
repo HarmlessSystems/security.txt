@@ -35,7 +35,8 @@ const i18nTag = {
       return;
     }
     for (let i = 0; i < element.options.length; i++) {
-      element.options[i].textContent = i18n(element.id + '_' + element.options[i].value);
+      element.options[i].textContent = i18n(element.id + '_' +
+        element.options[i].value);
     }
   }
 };

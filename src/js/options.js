@@ -23,8 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
       element.addEventListener('change', (event) => {
         const pref = {};
         pref[event.target.id] = event.target.value;
-        console.log(`Setting '${event.target.id}' to new value of '${event.target.value}'`);
-        browser.storage.local.set(pref).then(storageLocalSet, storageLocalSetError);
+        console.log(`Setting '${event.target.id}' to new value of: ` + 
+          event.target.value);
+        browser.storage.local.set(pref).then(storageLocalSet,
+          storageLocalSetError);
       });
     }, storageLocalGetError);
   });
@@ -36,7 +38,8 @@ document.querySelector('button').addEventListener('click', () => {
     const pref = {};
     element.value = defaultOptions[element.id];
     pref[element.id] = element.value;
-    console.log(`Setting '${element.id}' to default value of '${element.value}'`);
+    console.log(`Setting '${element.id}' to default value of: ` + 
+      element.value);
     browser.storage.local.set(pref).then(storageLocalSet, storageLocalSetError);
   });
 });

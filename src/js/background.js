@@ -49,14 +49,15 @@ function fetchFiles(tabId, tab) {
 
     browser.storage.local.get('check_humanstxt').then((result) => {
 
-      if (result && result.hasOwnProperty('check_humanstxt') && result.check_humanstxt === 'OFF') {
+      if (result && result.hasOwnProperty('check_humanstxt') && 
+          result.check_humanstxt === 'OFF') {
         humansTxtCheck = false;
         return console.log('humans.txt check disabled');
       }
 
       // XXX I've encountered at least one site (netflix.com) where a HEAD 
       // doesn't work on a humans.txt file (403 response). While odd, in all 
-      // fairness, the "humans.txt" files is inteded for "humans" who wouldn't
+      // fairness, the "humans.txt" files is intedned for "humans" who wouldn't
       // be making HEAD requests but rather navigating to the URL manually...
       return fetch(`${host}/humans.txt`/*, fetchOptions*/).then((result) => {
 
@@ -81,8 +82,6 @@ function fetchFiles(tabId, tab) {
         title = i18n('found_security_and_humans_txt');
       }
 
-      // Mote that we need to change icons for Chrome/Edge bug with pageAction.hide()
-      // interesting enough, the bug doesn't impact Opera
       if (finalResults.security || finalResults.humans) {
         localStorage.setItem(finalResults.host, JSON.stringify(finalResults));
         browser.pageAction.show(tabId);
@@ -92,6 +91,8 @@ function fetchFiles(tabId, tab) {
             `&humans=${finalResults.humans}`
         });
 
+        // XXX Note that we need to change icons for Chrome/Edge bug with 
+        // pageAction.hide() interesting enough, the bug doesn't impact Opera
         if (BROWSER_QUIRKS === 'chrome' || BROWSER_QUIRKS === 'edge') {
           browser.pageAction.setIcon({
             tabId: tabId,
@@ -161,11 +162,12 @@ function runtimeOnInstalled(details) {
         url: browser.runtime.getURL('install.html')
       });
     break;
-    case 'update':
-      browser.tabs.create({
-        url: browser.runtime.getURL('release.html')
-      });
-    break;
+    // XXX No updates yet
+    // case 'update':
+    //   browser.tabs.create({
+    //     url: browser.runtime.getURL('release.html')
+    //   });
+    // break;
     default:
       console.log('browser.runtime.onInstalled', details);
     break;
