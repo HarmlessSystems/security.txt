@@ -100,8 +100,8 @@
     "description" : "Headline for description of where the user can find more information about the browser extension. (D-10)"
   },
   "more_info_content": {
-    "message": "You can find more information about security.txt extension on our blog post and initial release announcement. (D-11)",
-    "description" : "Details and a link to more information"
+    "message": "You can find more information about security.txt extension on our blog post and initial release announcement.",
+    "description" : "Details and a link to more information. (D-11)"
   },
   "feedback_appreciated": {
     "message": "We appreciate your feedback",
@@ -109,11 +109,11 @@
   },
   "feedback_pre_email": {
     "message": "If you encounter any issues using this extension or would like to contact us with any feedback or suggestions you can reach us by email at: ",
-    "description" : "text show before the email address link where feedback can be submitted. (D-13)"
+    "description" : "Text show before the email address link where feedback can be submitted. (D-13)"
   },
   "feedback_pre_github": {
     "message": "If you have a Github account, you can also open an issue on this extension's Github page at: ",
-    "description" : "text show before the Github page link where feedback can be submitted. (D-14)"
+    "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
   },
   "release_title": {
     "message": "Release Notes",
