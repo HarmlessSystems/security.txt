@@ -72,7 +72,7 @@
     "description" : "Headline for description of the security.txt initiative. (D-3)"
   },
   "what_is_security_txt_content": {
-    "message": "security.txt is a proposed standard which provides a means for websites and software authors to define their security policies. This is useful to security researchers or anyone who would like to properly disclose a vulnerability to the owners of the website or software.",
+    "message": "security.txt is a proposed standard that provides a means for websites and software authors to define their security policies. This is useful to security researchers or anyone who would like to properly disclose a vulnerability to the owners of the website or software.",
     "description" : "Description of the security.txt initiative. (D-4)"
   },
   "what_is_humans_txt": {
@@ -88,7 +88,7 @@
     "description" : "Headline for description of the browser extension works. (D-7)"
   },
   "how_does_it_work_content_pre": {
-    "message": "As you browse the web, and navigate to different websites, the browser extension checks the website to see if it supports either type of file. If it does, an ",
+    "message": "As you browse the web and navigate to different websites, the browser extension checks the website to see if it supports either type of file. If it does, an ",
     "description" : "Content explaining how the browser extension works (before the inline icon). (D-8)"
   },
   "how_does_it_work_content_post": {
