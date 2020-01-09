@@ -6,8 +6,10 @@ module.exports = function(grunt) {
  
   require('load-grunt-tasks')(grunt);
 
+  const packageJSON = grunt.file.readJSON('package.json');
+
   grunt.initConfig({
-    package: grunt.file.readJSON('package.json'),
+    package: packageJSON,
     manifest: grunt.file.readJSON('src/manifest.json'),
     browsers: browsers,
     mkdir: {
@@ -55,6 +57,52 @@ module.exports = function(grunt) {
         },
         src: ['Gruntfile.js']
       },
+    },
+    compress: {
+      firefox: {
+        options: {
+          archive: `build/release/${packageJSON.name}.${packageJSON.version}.firefox.zip`
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/firefox',
+          src: ['**'],
+          dest: '/'
+        }]
+      },
+      chrome: {
+        options: {
+          archive: `build/release/${packageJSON.name}.${packageJSON.version}.chrome.zip`
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/chrome',
+          src: ['**'],
+          dest: '/'
+        }]
+      },
+      opera: {
+        options: {
+          archive: `build/release/${packageJSON.name}.${packageJSON.version}.opera.zip`
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/opera',
+          src: ['**'],
+          dest: '/'
+        }]
+      },
+      edge: {
+        options: {
+          archive: `build/release/${packageJSON.name}.${packageJSON.version}.edge.zip`
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/edge',
+          src: ['**'],
+          dest: '/'
+        }]
+      }
     }
   });
 
@@ -112,5 +160,13 @@ module.exports = function(grunt) {
     'copy',
     'copy:polyfill',
     'quirks'
+  ]);
+
+  grunt.registerTask('release', [
+    'default',
+    'compress:firefox',
+    'compress:chrome',
+    'compress:opera',
+    'compress:edge'
   ]);
 };
