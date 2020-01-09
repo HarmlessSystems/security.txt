@@ -23,12 +23,22 @@ module.exports = function(grunt) {
       all: ['build']
     },
     copy: {
-      all: {
+      src: {
         files: browsers.map((browser) => {
           return {
             expand: true,
             cwd: 'src/',
             src: ['**', '!manifest*json'],
+            dest: `build/${browser}`
+          };
+        })
+      },
+      misc: {
+        files: browsers.map((browser) => {
+          return {
+            expand: true,
+            cwd: '.',
+            src: ['security.txt', 'LICENSE'],
             dest: `build/${browser}`
           };
         })
@@ -61,7 +71,7 @@ module.exports = function(grunt) {
     compress: {
       firefox: {
         options: {
-          archive: `build/release/${packageJSON.name}.${packageJSON.version}.firefox.zip`
+          archive: `build/release/${packageJSON.name}-${packageJSON.version}-firefox.zip`
         },
         files: [{
           expand: true,
@@ -72,7 +82,7 @@ module.exports = function(grunt) {
       },
       chrome: {
         options: {
-          archive: `build/release/${packageJSON.name}.${packageJSON.version}.chrome.zip`
+          archive: `build/release/${packageJSON.name}-${packageJSON.version}-chrome.zip`
         },
         files: [{
           expand: true,
@@ -83,7 +93,7 @@ module.exports = function(grunt) {
       },
       opera: {
         options: {
-          archive: `build/release/${packageJSON.name}.${packageJSON.version}.opera.zip`
+          archive: `build/release/${packageJSON.name}-${packageJSON.version}-opera.zip`
         },
         files: [{
           expand: true,
@@ -94,7 +104,7 @@ module.exports = function(grunt) {
       },
       edge: {
         options: {
-          archive: `build/release/${packageJSON.name}.${packageJSON.version}.edge.zip`
+          archive: `build/release/${packageJSON.name}-${packageJSON.version}-edge.zip`
         },
         files: [{
           expand: true,
@@ -157,8 +167,9 @@ module.exports = function(grunt) {
     'clean',
     'mkdir',
     'manifests',
-    'copy',
+    'copy:src',
     'copy:polyfill',
+    'copy:misc',
     'quirks'
   ]);
 
