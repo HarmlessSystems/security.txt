@@ -1,118 +1,118 @@
 {
   "extension_description": {
-    "message": "Displays the security.txt and humans.txt files for a website if available.",
+    "message": "웹사이트에 security.txt 와 humans.txt. 가 있다면 표시합니다.",
     "description" : "Description of the browser extension describing how it functions. (A-1)"
   },
   "options_title": {
-    "message": "Preferences",
+    "message": "환경설정",
     "description" : "Title text of options/preferences page. (A-2)"
   },
   "check_humanstxt": {
-    "message": "Also check for a humans.txt file: ",
+    "message": "human.txt 파일도 있는지 확인: ",
     "description" : "Label text for an option which enables checking for humans.txt files. (A-3)"
   },
   "check_humanstxt_ON": {
-    "message": "Enabled",
+    "message": "활성화됨",
     "description" : "Text shown when checking for a humans.txt file is enabled. (A-4)"
   },
   "check_humanstxt_OFF": {
-    "message": "Disabled",
+    "message": "비활성화됨",
     "description" : "Text shown when checking for a humans.txt file is disabled. (A-5)"
   },
   "reset_default": {
-    "message": "Reset all preferences to default values",
+    "message": "모든 환경설정을 기본값으로 리셋",
     "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
   },
   "found_nothing": {
-    "message": "No security.txt or humans.txt found.",
+    "message": "security.txt 나 humans.txt 가 발견되지 않았습니다.",
     "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
   },
   "not_found_security_txt": {
-    "message": "No security.txt found",
+    "message": "security.txt 가 발견되지 않았습니다",
     "description" : "Text shown when a security.txt file is not found. (B-2)"
   },
   "found_security_txt": {
-    "message": "Found security.txt",
+    "message": "security.txt 를 찾았습니다",
     "description" : "Text shown when a security.txt file has been found. (B-3)"
   },
    "found_humans_txt": {
-    "message": "Found humans.txt",
+    "message": "humans.txt 를 찾았습니다",
     "description" : "Text shown when a humans.txt file has been found. (B-4)"
   },
   "found_security_and_humans_txt": {
-    "message": "Found security.txt and humans.txt",
+    "message": "security.txt 와 humans.txt 를 찾았습니다",
     "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
   },
   "copy_security_clipboard": {
-    "message": "Copy security.txt to clipboard",
+    "message": "security.txt 를 클립보드로 복사",
     "description" : "Text for button to copy security.txt text to clipboard. (C-1)"
   },
   "copied_security_to_clipboard": {
-    "message": "Copied security.txt!",
+    "message": "security.txt 를 복사하였습니다!",
     "description" : "Message shown when security.txt text has been copied to the clipboard. (C-2)"
   },
   "copy_humans_clipboard": {
-    "message": "Copy humans.txt to clipboard",
+    "message": "humans.txt 를 클립보드로 복사",
     "description" : "Text for button to copy humans.txt text to clipboard. (C-3)"
   },
   "copied_humans_to_clipboard": {
-    "message": "Copied humans.txt!",
+    "message": "humans.txt 를 복사하였습니다!",
     "description" : "Message shown when humans.txt text has been copied to the clipboard. (C-4)"
   },
   "install_title": {
-    "message": "Thanks for installing",
+    "message": "감사합니다",
     "description" : "Headline shown on web page after installation of extension. (D-1)"
   },
   "install_subtitle": {
-    "message": "Thank you for installing the security.txt browser extension!",
+    "message": "security.txt 브라우저 익스텐션을 설치해주셔서 감사드립니다!",
     "description" : "Subtitle shown below install title. (D-2)"
   },
   "what_is_security_txt": {
-    "message": "What is security.txt?",
+    "message": "security.txt 란 무엇인가요?",
     "description" : "Headline for description of the security.txt initiative. (D-3)"
   },
   "what_is_security_txt_content": {
-    "message": "security.txt is a proposed standard that provides a means for websites and software authors to define their security policies. This is useful to security researchers or anyone who would like to properly disclose a vulnerability to the owners of the website or software.",
+    "message": "security.txt는 웹사이트 및 소프트웨어 작성자가 보안 정책을 정의하는 수단을 제공할 수 있도록 제안된 표준입니다. 이것은 보안연구원이나 취약점을 정확히 공개하고자 하는 사람에게 유용합니다.",
     "description" : "Description of the security.txt initiative. (D-4)"
   },
   "what_is_humans_txt": {
-    "message": "What is humans.txt?",
+    "message": "humans.txt 란 무엇인가요?",
     "description" : "Headline for description of the humans.txt initiative. (D-5)"
   },
   "what_is_humans_txt_content": {
-    "message": "humans.txt is a less formal initiative for providing human-readable information about the authors of the website.",
+    "message": "humans.txt는 웹사이트 작성자에 대한 사람이 읽을 수 있는 정보를 제공하는 덜 공식적인 수단입니다.",
     "description" : "Description of the humans.txt initiative. (D-6)"
   },
   "how_does_it_work": {
-    "message": "How does the browser extension work?",
+    "message": "이 브라우저 익스텐션은 어떻게 작동하나요?",
     "description" : "Headline for description of the browser extension works. (D-7)"
   },
   "how_does_it_work_content_pre": {
-    "message": "As you browse the web and navigate to different websites, the browser extension checks the website to see if it supports either type of file. If it does, an ",
+    "message": "이 브라우저 익스텐션은 사용자가 웹사이트를 방문하면 그 사이트가 security.txt 나 humans.txt 의 지원여부를 확인합니다. 만약 지원한다면 아이콘 ",
     "description" : "Content explaining how the browser extension works (before the inline icon). (D-8)"
   },
   "how_does_it_work_content_post": {
-    "message": " icon is shown in the URL bar. You can click this icon to view more details about the text files that were located.",
+    "message": " 이 URL바에 표시되며 그것을 클릭하면 더 자세한 정보를 얻을 수 있습니다.",
     "description" : "Content explaining how the browser extension works (after the inline icon) (D-9)."
   },
   "more_info": {
-    "message": "More information",
+    "message": "더 알아보기n",
     "description" : "Headline for description of where the user can find more information about the browser extension. (D-10)"
   },
   "more_info_content": {
-    "message": "You can find more information about security.txt extension on our blog post and initial release announcement.",
+    "message": "저희 블로그 게시물 및 초기 릴리스 공지에서 security.txt 익스텐션에 대한 더 자세한 정보를 찾을 수 있습니다.",
     "description" : "Details and a link to more information. (D-11)"
   },
   "feedback_appreciated": {
-    "message": "We appreciate your feedback",
+    "message": "여러분의 피드백은 많은 도움이 됩니다",
     "description" : "Headline for section describing where the user can submit their feedback or any issues. (D-12)"
   },
   "feedback_pre_email": {
-    "message": "If you encounter any issues using this extension or would like to contact us with any feedback or suggestions you can reach us by email at: ",
+    "message": "이 확장 프로그램을 사용하면서 문제가 발생하거나 의견이나 제안 사항이 있는 경우 저희에게 연락하시려면 다음 주소로 이메일을 보내십시오. ",
     "description" : "Text show before the email address link where feedback can be submitted. (D-13)"
   },
   "feedback_pre_github": {
-    "message": "If you have a Github account, you can also open an issue on this extension's Github page at: ",
+    "message": "만약 Github 를 사용하신다면 아래의 링크에서도 문제제기나 의견 교환을 하실 수 있습니다. ",
     "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
   },
   "release_title": {
