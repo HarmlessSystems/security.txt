@@ -1,0 +1,122 @@
+{
+  "extension_description": {
+    "message": "Muestra los archivos security.txt y humans.txt de un sitio web, si están disponibles.",
+    "description" : "Description of the browser extension describing how it functions. (A-1)"
+  },
+  "options_title": {
+    "message": "Preferencias",
+    "description" : "Title text of options/preferences page. (A-2)"
+  },
+  "check_humanstxt": {
+    "message": "Tambien comprueba la existencia de un archivo humans.txt: ",
+    "description" : "Label text for an option which enables checking for humans.txt files. (A-3)"
+  },
+  "check_humanstxt_ON": {
+    "message": "Habilitado",
+    "description" : "Text shown when checking for a humans.txt file is enabled. (A-4)"
+  },
+  "check_humanstxt_OFF": {
+    "message": "Deshabilitado",
+    "description" : "Text shown when checking for a humans.txt file is disabled. (A-5)"
+  },
+  "reset_default": {
+    "message": "Restablece todas las preferencias a los valores predeterminados",
+    "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
+  },
+  "found_nothing": {
+    "message": "security.txt o humans.txt. no han sido encontrados.",
+    "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
+  },
+  "not_found_security_txt": {
+    "message": "security.txt no ha sido encontrado",
+    "description" : "Text shown when a security.txt file is not found. (B-2)"
+  },
+  "found_security_txt": {
+    "message": "security.txt ha sido encontrado",
+    "description" : "Text shown when a security.txt file has been found. (B-3)"
+  },
+   "found_humans_txt": {
+    "message": "humans.txt ha sido encontrado",
+    "description" : "Text shown when a humans.txt file has been found. (B-4)"
+  },
+  "found_security_and_humans_txt": {
+    "message": "security.txt y humans.txt han sido encontrados",
+    "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
+  },
+  "copy_security_clipboard": {
+    "message": "Copia security.txt al portapapeles",
+    "description" : "Text for button to copy security.txt text to clipboard. (C-1)"
+  },
+  "copied_security_to_clipboard": {
+    "message": "security.txt copiado!",
+    "description" : "Message shown when security.txt text has been copied to the clipboard. (C-2)"
+  },
+  "copy_humans_clipboard": {
+    "message": "Copia human.txt al portapapeles",
+    "description" : "Text for button to copy humans.txt text to clipboard. (C-3)"
+  },
+  "copied_humans_to_clipboard": {
+    "message": "humans.txt copiado!",
+    "description" : "Message shown when humans.txt text has been copied to the clipboard. (C-4)"
+  },
+  "install_title": {
+    "message": "Gracias por instalar",
+    "description" : "Headline shown on web page after installation of extension. (D-1)"
+  },
+  "install_subtitle": {
+    "message": "Gracias por instalar la extensión del navegador web security.txt!",
+    "description" : "Subtitle shown below install title. (D-2)"
+  },
+  "what_is_security_txt": {
+    "message": "¿Qué es security.txt?",
+    "description" : "Headline for description of the security.txt initiative. (D-3)"
+  },
+  "what_is_security_txt_content": {
+    "message": "security.txt es un estándar propuesto que proporciona un medio para que los sitios web y los autores de software definan sus pólizas de seguridad. Esto es útil para los investigadores de seguridad o cualquier persona que desee divulgar adecuadamente una vulnerabilidad de seguridad a los propietarios del sitio web o software.",
+    "description" : "Description of the security.txt initiative. (D-4)"
+  },
+  "what_is_humans_txt": {
+    "message": "¿Qué es humans.txt?",
+    "description" : "Headline for description of the humans.txt initiative. (D-5)"
+  },
+  "what_is_humans_txt_content": {
+    "message": "humans.txt es una iniciativa menos formal para proporcionar información legible por humanos sobre los autores del sitio web.",
+    "description" : "Description of the humans.txt initiative. (D-6)"
+  },
+  "how_does_it_work": {
+    "message": "¿Cómo funciona la extensión del navegador web?",
+    "description" : "Headline for description of the browser extension works. (D-7)"
+  },
+  "how_does_it_work_content_pre": {
+    "message": "A medida que navega por la web y navega a diferentes sitios web, la extensión del navegador verifica el sitio web para ver si soporta cualquiera de los dos tipos de archivo. Si lo soporta, un  ",
+    "description" : "Content explaining how the browser extension works (before the inline icon). (D-8)"
+  },
+  "how_does_it_work_content_post": {
+    "message": " icono se muestra en la barra de URL. Puede hacer clic en este icono para ver más detalles sobre los archivos de texto que se ubicaron.",
+    "description" : "Content explaining how the browser extension works (after the inline icon) (D-9)."
+  },
+  "more_info": {
+    "message": "Mas informacion",
+    "description" : "Headline for description of where the user can find more information about the browser extension. (D-10)"
+  },
+  "more_info_content": {
+    "message": "Puede encontrar más información sobre la extensión security.txt en nuestra publicación de blog y anuncio de lanzamiento inicial.",
+    "description" : "Details and a link to more information. (D-11)"
+  },
+  "feedback_appreciated": {
+    "message": "Agradecemos sus comentarios y sugerencias",
+    "description" : "Headline for section describing where the user can submit their feedback or any issues. (D-12)"
+  },
+  "feedback_pre_email": {
+    "message": "Si encuentra algún problema al usar esta extensión o desea contactarnos con cualquier comentario o sugerencia, puede comunicarse con nosotros por correo electrónico a: ",
+    "description" : "Text show before the email address link where feedback can be submitted. (D-13)"
+  },
+  "feedback_pre_github": {
+    "message": "Si tiene una cuenta de Github, también puede abrir un asunto en la página de Github de esta extensión en: ",
+    "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
+  },
+  "release_title": {
+    "message": "Notas de Lanzamiento",
+    "description" : "Page title for release notes page shown on extension update."
+  }
+}
