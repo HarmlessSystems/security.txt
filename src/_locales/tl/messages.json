@@ -1,0 +1,122 @@
+{
+  "extension_description": {
+    "message": "Ipinapakita ang security.txt at humans.txt file para sa website kung mayroon.",
+    "description" : "Description of the browser extension describing how it functions. (A-1)"
+  },
+  "options_title": {
+    "message": "Kagustuhan",
+    "description" : "Title text of options/preferences page. (A-2)"
+  },
+  "check_humanstxt": {
+    "message": "Tinitingnan din ang humans.txt file: ",
+    "description" : "Label text for an option which enables checking for humans.txt files. (A-3)"
+  },
+  "check_humanstxt_ON": {
+    "message": "Pinapagana",
+    "description" : "Text shown when checking for a humans.txt file is enabled. (A-4)"
+  },
+  "check_humanstxt_OFF": {
+    "message": "Hindi Pinapagana",
+    "description" : "Text shown when checking for a humans.txt file is disabled. (A-5)"
+  },
+  "reset_default": {
+    "message": "Ibalik lahat ng kagustuhan sa default na halaga",
+    "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
+  },
+  "found_nothing": {
+    "message": "Walang security.txt o humans.txt na nahanap.",
+    "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
+  },
+  "not_found_security_txt": {
+    "message": "Walang security.txt na nahanap",
+    "description" : "Text shown when a security.txt file is not found. (B-2)"
+  },
+  "found_security_txt": {
+    "message": "Nahanap ang security.txt",
+    "description" : "Text shown when a security.txt file has been found. (B-3)"
+  },
+   "found_humans_txt": {
+    "message": "Nahanap ang humans.txt",
+    "description" : "Text shown when a humans.txt file has been found. (B-4)"
+  },
+  "found_security_and_humans_txt": {
+    "message": "Nahanap ang security.txt at humans.txt",
+    "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
+  },
+  "copy_security_clipboard": {
+    "message": "Kopyahin ang security.txt sa clipboard",
+    "description" : "Text for button to copy security.txt text to clipboard. (C-1)"
+  },
+  "copied_security_to_clipboard": {
+    "message": "Nakopya ang security.txt!",
+    "description" : "Message shown when security.txt text has been copied to the clipboard. (C-2)"
+  },
+  "copy_humans_clipboard": {
+    "message": "Kopyahin ang humans.txt sa clipboard",
+    "description" : "Text for button to copy humans.txt text to clipboard. (C-3)"
+  },
+  "copied_humans_to_clipboard": {
+    "message": "Kinopya ang humans.txt!",
+    "description" : "Message shown when humans.txt text has been copied to the clipboard. (C-4)"
+  },
+  "install_title": {
+    "message": "Salamat sa pag-iinstall",
+    "description" : "Headline shown on web page after installation of extension. (D-1)"
+  },
+  "install_subtitle": {
+    "message": "Salamat sa pag-iinstall ng browser extension ng security.txt!",
+    "description" : "Subtitle shown below install title. (D-2)"
+  },
+  "what_is_security_txt": {
+    "message": "Ano ang security.txt?",
+    "description" : "Headline for description of the security.txt initiative. (D-3)"
+  },
+  "what_is_security_txt_content": {
+    "message": "Ang security.txt ay iminungkahing pamantayan na nagbibigay ng paraan sa mga website at may-akda ng software na tukuyin ang kanilang mga patakaran sa seguridad. Ito ay kapaki-pakinabang sa mga mananaliksik ng seguridad o sinumang nais na maayos na ibunyag ang kahinaan sa mga may-ari ng website o software.",
+    "description" : "Description of the security.txt initiative. (D-4)"
+  },
+  "what_is_humans_txt": {
+    "message": "Ano ang humans.txt?",
+    "description" : "Headline for description of the humans.txt initiative. (D-5)"
+  },
+  "what_is_humans_txt_content": {
+    "message": "Ang humans.txt ay isang hindi gaanong pormal na inisyatibo para sa pagbibigay ng nababasang impormasyon ng tao tungkol sa mga may-akda ng website.",
+    "description" : "Description of the humans.txt initiative. (D-6)"
+  },
+  "how_does_it_work": {
+    "message": "Paano gumagana ang extension ng browser?",
+    "description" : "Headline for description of the browser extension works. (D-7)"
+  },
+  "how_does_it_work_content_pre": {
+    "message": "Habang nagba-browse ka sa web, at nagna-navigate sa iba't ibang website, sinusuri ng extension ng browser ang website upang makita kung sinusuportahan nito ang alinman sa uri ng file. Kung sinusuportahan ito, may ",
+    "description" : "Content explaining how the browser extension works (before the inline icon). (D-8)"
+  },
+  "how_does_it_work_content_post": {
+    "message": " ipinapakita ang icon sa URL bar. Maaari mong pindutin ang icon na ito upang matingnan ang iba pang detalye tungkol sa mga makikitang text file.",
+    "description" : "Content explaining how the browser extension works (after the inline icon) (D-9)."
+  },
+  "more_info": {
+    "message": "Iba pang impormasyon",
+    "description" : "Headline for description of where the user can find more information about the browser extension. (D-10)"
+  },
+  "more_info_content": {
+    "message": "Maaari mong mahanap ang iba pang impormasyon tungkol sa extension na security.txt sa aming blog post at paunang pahayag.",
+    "description" : "Details and a link to more information. (D-11)"
+  },
+  "feedback_appreciated": {
+    "message": "Pinahahalagahan namin ang iyong puna",
+    "description" : "Headline for section describing where the user can submit their feedback or any issues. (D-12)"
+  },
+  "feedback_pre_email": {
+    "message": "Kung nakatagpo ka ng anumang isyu gamit ang extension na ito o nais mong makipag-ugnayan sa amin sa anumang puna o mungkahi, maaari kang makipag-ugnayan sa amin sa pamamagitan ng email sa: ",
+    "description" : "Text show before the email address link where feedback can be submitted. (D-13)"
+  },
+  "feedback_pre_github": {
+    "message": "Kung mayroon kang account sa Github, maaari ka ring magbukas ng isyu sa pahina sa Github ng extension na ito: ",
+    "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
+  },
+  "release_title": {
+    "message": "Release Notes",
+    "description" : "Page title for release notes page shown on extension update."
+  }
+}

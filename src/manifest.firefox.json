@@ -1,0 +1,25 @@
+
+{
+  "_notes_incognito": "Split mode not supported on Firefox. https://bugzilla.mozilla.org/show_bug.cgi?id=1380812",
+  "incognito": "spanning",
+
+  "_notes_background": "Only persistent pages are supported in Firefox.",
+  "background": {
+    "scripts": [
+      "js/global.js",
+      "js/background.js"
+    ],
+    "persistent": true
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+
+  "_notes_page_action": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Browser_styles",
+  "page_action": {
+    "default_icon": "img/info.svg",
+    "browser_style": true
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+  </head>
+  <body>
+    <div class="tabs">
+      <input type="radio" id="securityTab" name="tabs" checked>
+      <label id="securityTabLabel" for="securityTab">security.txt</label>
+      <input type="radio" id="humansTab" name="tabs">
+      <label id="humansTabLabel" for="humansTab">humans.txt</label>
+      <div id="securityTxt">
+        <button type="button" data-i18n="copy_security_clipboard"></button>
+        <textarea spellcheck="false"></textarea>
+      </div>
+      <div id="humansTxt">
+        <button type="button" data-i18n="copy_humans_clipboard"></button>
+        <textarea spellcheck="false"></textarea>
+      </div>
+    </div>
+    <script src="js/browser-polyfill.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

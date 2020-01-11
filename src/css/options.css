@@ -1,0 +1,32 @@
+body {
+  padding-top: 1em;
+  font-size: 15px;
+}
+
+form > div {
+  padding: 0.25em;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: #202023;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #202023;
+    background: white;
+  }
+}
+

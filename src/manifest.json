@@ -1,0 +1,31 @@
+{
+
+  "_notes_": "keys starting with '_notes_' will be removed by grunt",
+  "_notes_package.json": "where keys overlap, they are taken from package.json",
+  "_notes_browsers": "browser specific keys and overrides are taken from: manifest.<BROWSER>.json",
+
+  "manifest_version": 2,
+  "description": "__MSG_extension_description__",
+  "default_locale": "en",
+  "incognito": "split",
+  "icons": {
+    "16": "img/info.16.png",
+    "48": "img/info.48.png",
+    "96": "img/info.96.png",
+    "128": "img/info.128.png"
+  },
+  "permissions": [
+    "http://*/.well-known/security.txt",
+    "http://*/security.txt",
+    "http://*/humans.txt",
+    "https://*/.well-known/security.txt",
+    "https://*/security.txt",
+    "https://*/humans.txt",
+    "tabs",
+    "storage"
+  ],
+  "page_action": {},
+  "background": {
+    "persistent": false
+  }
+}
