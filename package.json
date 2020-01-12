@@ -1,6 +1,6 @@
 {
   "name": "security.txt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-platform browser extension for security.txt and humans.txt files.",
   "homepage": "https://www.harmless.systems/products/security-txt.html",
   "main": "Gruntfile.js",
