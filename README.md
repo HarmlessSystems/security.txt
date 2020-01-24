@@ -6,6 +6,13 @@ As you browse the web, this extension will check for a [security.txt](https://to
 and [humans.txt](http://humanstxt.org) file on each site you visit. If either file exists, the pageAction can be clicked to 
 display the files.
 
+## Install
+
+- [Firefox Add-ons](https://addons.mozilla.org/addon/security-txt/)
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/securitytxt/enhcidlgmnmolephljjhbgfnjlfjnimd)
+- [Edge Addons](https://microsoftedge.microsoft.com/addons/detail/hfhegbhdofjdepaelheapbihjlhkaofj)
+- [Opera Addons (⏳ pending moderation approval)](https://addons.opera.com/en/extensions/details/securitytxt/)
+
 ## Building locally
 
 ``yarn && yarn run build``
