@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="options_title"></title>
-    <link rel="stylesheet" href="css/options.css"/>
+    <link rel="stylesheet" href="css/options.css">
   </head>
   <body>
     <form>
@@ -15,9 +16,17 @@
         </select>
       </div>
       <div>
-        <button type="button" id="reset_default" data-i18n class="browser-style"></button>
+        <label for="host_blacklist" data-i18n></label>
+      </div>
+      <div>
+        <textarea id="host_blacklist" class="browser-style"></textarea>
+      </div>
+      <div>
+        <button type="button" id="reset" data-i18n class="browser-style"></button>
+        <button type="button" id="save" data-i18n class="browser-style"></button>
       </div>
     </form>
+    <div id="saved" data-i18n></div>
     <script src="js/browser-polyfill.js"></script>
     <script src="js/global.js"></script>
     <script src="js/options.js"></script>

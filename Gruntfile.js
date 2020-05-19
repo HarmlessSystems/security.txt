@@ -50,7 +50,24 @@ module.exports = function(grunt) {
             dest: `build/${browser}/js/browser-polyfill.js`
           };
         })
-      }
+      },
+      polyfillMap: {
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/webextension-polyfill/dist/browser-polyfill.js.map',
+            dest: `build/${browser}/js/browser-polyfill.js.map`
+          };
+        })
+      },
+      async: {
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/async/dist/async.js',
+            dest: `build/${browser}/js/async.js`
+          };
+        })
+      },
+
     },
     jshint: {
       extension: {
@@ -113,6 +130,22 @@ module.exports = function(grunt) {
           dest: '/'
         }]
       }
+    },
+    browserify: {
+      minimatch: {
+        options: {
+          banner: "// browserify'd build of https://github.com/isaacs/minimatch",
+          browserifyOptions: {
+            standalone: 'minimatch'
+          }
+        },
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/minimatch/minimatch.js',
+            dest: `build/${browser}/js/minimatch.js`
+          };
+        })
+      }
     }
   });
 
@@ -169,7 +202,9 @@ module.exports = function(grunt) {
     'manifests',
     'copy:src',
     'copy:polyfill',
+    'copy:async',
     'copy:misc',
+    'browserify:minimatch',
     'quirks'
   ]);
 

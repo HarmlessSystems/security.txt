@@ -6,6 +6,8 @@
   "_notes_background": "Only persistent pages are supported in Firefox.",
   "background": {
     "scripts": [
+      "js/minimatch.js",
+      "js/async.js",
       "js/global.js",
       "js/background.js"
     ],

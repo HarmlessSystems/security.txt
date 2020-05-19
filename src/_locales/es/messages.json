@@ -23,6 +23,18 @@
     "message": "Restablece todas las preferencias a los valores predeterminados",
     "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
   },
+  "host_blacklist": {
+    "message": "Exclude the following sites from checks (separate wth newlines):",
+    "description" : "Label text for a list of sites to be excluded. (A-7)"
+  },
+  "reset": {
+    "message": "Reset",
+    "description" : "Text for reset button. (A-8)"
+  },
+  "save": {
+    "message": "Save",
+    "description" : "Text for save button. (A-9)"
+  },
   "found_nothing": {
     "message": "security.txt o humans.txt. no han sido encontrados.",
     "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
@@ -42,6 +54,10 @@
   "found_security_and_humans_txt": {
     "message": "security.txt y humans.txt han sido encontrados",
     "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
+  },
+  "found_blacklist": {
+    "message": "This site matches your exclusion list, not searching for security.txt or humans.txt files.",
+    "description" : "Text shown when the host matches the user-configurable exclusion list. (B-6)"
   },
   "copy_security_clipboard": {
     "message": "Copia security.txt al portapapeles",
@@ -117,6 +133,34 @@
   },
   "release_title": {
     "message": "Notas de Lanzamiento",
-    "description" : "Page title for release notes page shown on extension update."
+    "description" : "Page title for release notes page shown on extension update. (E-1)"
+  },
+  "release_subtitle": {
+    "message": "Thank you for updating the security.txt browser extension!",
+    "description" : "Subtitle for release notes page shown on extension update. (E-2)"
+  },
+  "release_intro": {
+    "message": "Wecome to ",
+    "description" : "Beginning of page headline. (E-3)"
+  },
+  "release_intro2": {
+    "message": "This release includes the following changes:",
+    "description" : "Release page intro sentence. (E-4)"
+  },
+  "feature_headline": {
+    "message": "New features and improvements",
+    "description" : "Headline for list of new features. (E-5)"
+  },
+  "thanks_headline": {
+    "message": "Special Thanks",
+    "description" : "Headline for list of people to thank. (E-6)"
+  },
+  "deprecations_headline": {
+    "message": "Deprecations",
+    "description" : "Headline for list of features that have been deprecated. (E-7)"
+  },
+  "more_info_link": {
+    "message": "You can find more information about this extension on our website.",
+    "description" : "Link to website regarding extension details. (E-8)"
   }
 }

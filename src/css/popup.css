@@ -92,3 +92,24 @@ button:hover {
   background:rgba(225,225,225,0.9);
   cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+  .tabs {
+    color: white;
+    background: #202023;
+  }
+  textarea {
+    color: white;
+    background: #202023;
+  }
+  .tabs label {
+    color: #eee;
+  }
+  .tabs label:before {
+    background: #202023;
+  }
+  .tabs input:checked + label {
+    color: #fff;
+    background: #202023;
+  }
+}

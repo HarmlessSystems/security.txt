@@ -8,8 +8,8 @@ html{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "PT Sans", "Open Sans", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:100%;
   line-height:1.4;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   -webkit-overflow-scrolling:touch;
 }
 
@@ -51,7 +51,7 @@ body > footer{
   padding-bottom:1.5em;
   text-align:center;
   font-size:0.8rem;
-  color:#aaaaaa;
+  color:#444444;
 }
 
 nav{
@@ -68,10 +68,10 @@ nav li{
   margin-bottom:0.25em;
 }
 nav a:visited{
-  color:#0064c1;
+  color:#fd9a49;
 }
 nav a:hover{
-  color:#f00000;
+  color:#75c53c;
 }
 
 ul, ol{
@@ -129,7 +129,7 @@ blockquote{
 aside{
   margin:0.5em 0;
   font-style:italic;
-  color:#aaaaaa;
+  color:#444444;
 }
 @media (min-width: 65rem){
   aside{
@@ -140,7 +140,7 @@ aside{
     margin:0;
     padding-left:0.5em;
     font-size:0.8em;
-    border-left:1px solid #f2f2f2;
+    border-left:1px solid #222222;
   }
 }
 aside:first-child{
@@ -171,7 +171,7 @@ h1 > a[href^="#"][id]:empty, h2 > a[href^="#"][id]:empty, h3 > a[href^="#"][id]:
   text-decoration:none;
   font-weight:400;
   line-height:1;
-  color:#aaaaaa;
+  color:#444444;
 }
 @media (min-width: 40rem){
   h1 > a[href^="#"][id]:empty, h2 > a[href^="#"][id]:empty, h3 > a[href^="#"][id]:empty, h4 > a[href^="#"][id]:empty, h5 > a[href^="#"][id]:empty, h6 > a[href^="#"][id]:empty{
@@ -181,7 +181,7 @@ h1 > a[href^="#"][id]:empty, h2 > a[href^="#"][id]:empty, h3 > a[href^="#"][id]:
 h1 > a[href^="#"][id]:empty:target, h1 > a[href^="#"][id]:empty:hover, h1 > a[href^="#"][id]:empty:focus, h2 > a[href^="#"][id]:empty:target, h2 > a[href^="#"][id]:empty:hover, h2 > a[href^="#"][id]:empty:focus, h3 > a[href^="#"][id]:empty:target, h3 > a[href^="#"][id]:empty:hover, h3 > a[href^="#"][id]:empty:focus, h4 > a[href^="#"][id]:empty:target, h4 > a[href^="#"][id]:empty:hover, h4 > a[href^="#"][id]:empty:focus, h5 > a[href^="#"][id]:empty:target, h5 > a[href^="#"][id]:empty:hover, h5 > a[href^="#"][id]:empty:focus, h6 > a[href^="#"][id]:empty:target, h6 > a[href^="#"][id]:empty:hover, h6 > a[href^="#"][id]:empty:focus{
   opacity:1;
   box-shadow:none;
-  color:black;
+  color:white;
 }
 h1 > a[href^="#"][id]:empty:target:focus, h2 > a[href^="#"][id]:empty:target:focus, h3 > a[href^="#"][id]:empty:target:focus, h4 > a[href^="#"][id]:empty:target:focus, h5 > a[href^="#"][id]:empty:target:focus, h6 > a[href^="#"][id]:empty:target:focus{
   outline:none;
@@ -213,7 +213,7 @@ h5{
 h6{
   margin-top:1em;
   font-size:1em;
-  color:#aaaaaa;
+  color:#444444;
 }
 
 article + article{
@@ -221,7 +221,7 @@ article + article{
 }
 article header p{
   font-size:0.6em;
-  color:#aaaaaa;
+  color:#444444;
 }
 article header p + h1, article header p + h2{
   margin-top:-0.25em;
@@ -230,13 +230,13 @@ article header h1 + p, article header h2 + p{
   margin-top:0.25em;
 }
 article header h1 a, article header h2 a{
-  color:black;
+  color:white;
 }
 article header h1 a:visited, article header h2 a:visited{
-  color:#aaaaaa;
+  color:#444444;
 }
 article header h1 a:visited:hover, article header h2 a:visited:hover{
-  color:#f00000;
+  color:#75c53c;
 }
 article > footer{
   margin-top:1.5em;
@@ -244,16 +244,16 @@ article > footer{
 }
 
 a{
-  color:#0064c1;
+  color:#fd9a49;
 }
 a:visited{
-  color:#8d39d0;
+  color:#7b4a29;
 }
 a:hover, a:active{
   outline-width:0;
 }
 a:hover{
-  color:#f00000;
+  color:#75c53c;
 }
 a abbr{
   font-size:1em;
@@ -300,39 +300,39 @@ table{
   max-width:100%;
   text-align:left;
   vertical-align:top;
-  background:linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%) 0 0, linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%) 100% 0;
+  background:linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%) 0 0, linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%) 100% 0;
   background-attachment:scroll, scroll;
   background-size:1px 100%, 1px 100%;
   background-repeat:no-repeat, no-repeat;
 }
 table caption{
   font-size:0.9em;
-  background:white;
+  background:black;
 }
 table td, table th{
   padding:0.35em 0.75em;
   vertical-align:top;
   font-size:0.9em;
-  border:1px solid #f2f2f2;
+  border:1px solid #222222;
   border-top:0;
   border-left:0;
 }
 table td:first-child, table th:first-child{
   padding-left:0;
-  background-image:linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-image:linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 100%);
   background-size:2px 100%;
   background-repeat:no-repeat;
 }
 table td:last-child, table th:last-child{
   padding-right:0;
   border-right:0;
-  background-image:linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-image:linear-gradient(to left, black 50%, rgba(0, 0, 0, 0) 100%);
   background-position:100% 0;
   background-size:2px 100%;
   background-repeat:no-repeat;
 }
 table td:only-child, table th:only-child{
-  background-image:linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+  background-image:linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(to left, black 50%, rgba(0, 0, 0, 0) 100%);
   background-position:0 0, 100% 0;
   background-size:2px 100%, 2px 100%;
   background-repeat:no-repeat, no-repeat;
@@ -375,11 +375,11 @@ form input[type=checkbox], form input[type=radio]{
 fieldset{
   margin:0;
   padding:0.5em 1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
 }
 
 legend{
-  color:#aaaaaa;
+  color:#444444;
 }
 
 button{
@@ -390,27 +390,27 @@ button{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:inline-block;
   width:auto;
-  background:#f2f2f2;
-  color:black;
+  background:#222222;
+  color:white;
   cursor:pointer;
 }
 button:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 button:not([disabled]):hover{
-  border:1px solid black;
+  border:1px solid white;
 }
 button:active{
-  background-color:#aaaaaa;
+  background-color:#444444;
 }
 button[disabled]{
-  color:#aaaaaa;
+  color:#444444;
   cursor:not-allowed;
 }
 
@@ -422,14 +422,14 @@ select{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:inline-block;
   width:auto;
-  background:#f2f2f2;
-  color:black;
+  background:#222222;
+  color:white;
   cursor:pointer;
   padding-right:1.2em;
   background-position:top 55% right 0.35em;
@@ -440,16 +440,16 @@ select{
   appearance:button;
 }
 select:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 select:not([disabled]):hover{
-  border:1px solid black;
+  border:1px solid white;
 }
 select:active{
-  background-color:#aaaaaa;
+  background-color:#444444;
 }
 select[disabled]{
-  color:#aaaaaa;
+  color:#444444;
   cursor:not-allowed;
 }
 
@@ -461,10 +461,10 @@ input[type=text], input[type=password], input[type^=date], input[type=email], in
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:block;
   width:100%;
   line-height:calc(2em - 1px * 2 - (.25em - 1px) * 2);
@@ -473,16 +473,16 @@ input[type=text], input[type=password], input[type^=date], input[type=email], in
           appearance:none;
 }
 input[type=text]:focus, input[type=password]:focus, input[type^=date]:focus, input[type=email]:focus, input[type=number]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=month]:focus, input[type=week]:focus, input[type=url]:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type^=date]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=time]::-moz-placeholder, input[type=month]::-moz-placeholder, input[type=week]::-moz-placeholder, input[type=url]::-moz-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type^=date]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=number]::-webkit-input-placeholder, input[type=search]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=time]::-webkit-input-placeholder, input[type=month]::-webkit-input-placeholder, input[type=week]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type^=date]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=search]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=time]:-ms-input-placeholder, input[type=month]:-ms-input-placeholder, input[type=week]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=submit], input[type=button], input[type=reset]{
   outline:none;
@@ -492,30 +492,30 @@ input[type=submit], input[type=button], input[type=reset]{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:inline-block;
   width:auto;
-  background:#f2f2f2;
-  color:black;
+  background:#222222;
+  color:white;
   cursor:pointer;
   -webkit-appearance:none;
      -moz-appearance:none;
           appearance:none;
 }
 input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=submit]:not([disabled]):hover, input[type=button]:not([disabled]):hover, input[type=reset]:not([disabled]):hover{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=submit]:active, input[type=button]:active, input[type=reset]:active{
-  background-color:#aaaaaa;
+  background-color:#444444;
 }
 input[type=submit][disabled], input[type=button][disabled], input[type=reset][disabled]{
-  color:#aaaaaa;
+  color:#444444;
   cursor:not-allowed;
 }
 input[type=color]{
@@ -526,10 +526,10 @@ input[type=color]{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:block;
   width:100%;
   line-height:calc(2em - 1px * 2 - (.25em - 1px) * 2);
@@ -539,19 +539,19 @@ input[type=color]{
   width:6em;
 }
 input[type=color]:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=color]::-moz-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=color]::-webkit-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=color]:-ms-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 input[type=color]:hover{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=file]{
   outline:none;
@@ -561,14 +561,14 @@ input[type=file]{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:inline-block;
   width:auto;
-  background:#f2f2f2;
-  color:black;
+  background:#222222;
+  color:white;
   cursor:pointer;
   display:block;
   width:100%;
@@ -578,16 +578,16 @@ input[type=file]{
   line-height:1;
 }
 input[type=file]:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=file]:not([disabled]):hover{
-  border:1px solid black;
+  border:1px solid white;
 }
 input[type=file]:active{
-  background-color:#aaaaaa;
+  background-color:#444444;
 }
 input[type=file][disabled]{
-  color:#aaaaaa;
+  color:#444444;
   cursor:not-allowed;
 }
 input[type=checkbox], input[type=radio]{
@@ -603,10 +603,10 @@ textarea{
   padding:calc(.25em - 1px) 0.5em;
   font-family:inherit;
   font-size:1em;
-  border:1px solid #aaaaaa;
+  border:1px solid #444444;
   border-radius:2px;
-  background:white;
-  color:black;
+  background:black;
+  color:white;
   display:block;
   width:100%;
   line-height:calc(2em - 1px * 2 - (.25em - 1px) * 2);
@@ -619,16 +619,16 @@ textarea{
   padding-bottom:0.5em;
 }
 textarea:focus{
-  border:1px solid black;
+  border:1px solid white;
 }
 textarea::-moz-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 textarea::-webkit-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 textarea:-ms-input-placeholder{
-  color:#aaaaaa;
+  color:#444444;
 }
 
 output{
@@ -643,7 +643,7 @@ code, kbd, var, samp{
 pre{
   overflow-x:auto;
   font-size:0.8em;
-  background:linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%) 0 0, linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%) 100% 0;
+  background:linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%) 0 0, linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%) 100% 0;
   background-attachment:scroll, scroll;
   background-size:1px 100%, 1px 100%;
   background-repeat:no-repeat, no-repeat;
@@ -653,15 +653,15 @@ pre > code{
   overflow-x:visible;
   box-sizing:border-box;
   min-width:100%;
-  border-right:3px solid white;
-  border-left:1px solid white;
+  border-right:3px solid black;
+  border-left:1px solid black;
 }
 
 hr{
   height:1px;
   margin:2em 0;
   border:0;
-  background:#f2f2f2;
+  background:#222222;
 }
 
 details{
@@ -669,7 +669,7 @@ details{
 }
 details[open]{
   padding-bottom:0.5em;
-  border-bottom:1px solid #f2f2f2;
+  border-bottom:1px solid #222222;
 }
 
 summary{
@@ -683,11 +683,11 @@ summary::-webkit-details-marker{
 }
 
 noscript{
-  color:#d00000;
+  color:#5afffe;
 }
 
 ::selection{
-  background:rgba(0, 100, 193, 0.25);
+  background:rgba(253, 154, 73, 0.25);
 }
 
 p > img {

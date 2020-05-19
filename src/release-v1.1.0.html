@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title data-i18n="release_title"></title>
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <header>
+      <header>
+        <h1 data-i18n="release_title"></h1>
+        <p data-i18n="release_subtitle"></p>
+      </header>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h3><span data-i18n="release_intro"> </span><span class="current-version"></span>!</h3>
+          <p data-i18n="release_intro2"></p>
+
+          <h3 data-i18n="feature_headline"></h3>
+          <ul>
+            <li>A new option has been added which allows users to exclude searching specific domains. See the extension <a href="options.html">preferences</a>.</li>
+            <li>Better handling of concurrent HTTP requests.</li>
+            <li>Automatically switch UI between light and dark modes.</li>
+          </ul>
+
+          <h3 data-i18n="thanks_headline"></h3>
+          <ul>
+            <li><a href="https://github.com/geeknik">Geeknik</a> for reporting <a href="https://github.com/HarmlessSystems/security.txt/issues/6">issue #6</a>.</li>
+            <li><a href="#">?</a> for updated Spanish translations. <em>Gracias!</em></li>
+            <li><a href="#">?</a> for updated Filipino translations. <em>Salamat!</em></li>
+            <li><a href="#">?</a> for updated French translations. <em>Merci!</em></li>
+            <li><a href="#">?</a> for updated Korean translations. <em>감사합니다!</em></li>
+          </ul>
+
+          <h3 data-i18n="deprecations_headline"></h3>
+          <ul>
+            <li>As of 2020-06-12 our original submission to the Opera store has been pending review for 6 months. As such, this will likley be the last release to support Opera unless the extension review process is drastically improved. Opera users will still be able to manually install either the Chrome or Edge releases but support will be limited.</li>
+          </ul>
+
+          <hr>
+          <h3 data-i18n="more_info"></h3>
+          <p>
+            <a data-i18n="more_info_link" href="https://www.harmless.systems/products/security-txt.html"></a>
+          </p>
+
+          <h3 data-i18n="feedback_appreciated"></h3>
+          <p>
+            <span data-i18n="feedback_pre_email"></span>
+            <a href="mailto:info@harmless.systems">info@harmless.systems</a>
+          </p>
+          <p>
+            <span data-i18n="feedback_pre_github"></span>
+            <a href="https://github.com/HarmlessSystems/security.txt/issues">HarmlessSystems/security.txt</a>
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; <span class="current-year"></span> <a href="https://www.harmless.systems">Harmless Systems</a></p>
+    </footer>
+    <script src="js/browser-polyfill.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/release.js"></script>
+  </body>
+</html>

@@ -1,6 +1,9 @@
+
 body {
   padding-top: 1em;
+  padding-bottom: 10em;
   font-size: 15px;
+  margin-bottom: 2em;
 }
 
 form > div {
@@ -16,6 +19,18 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  min-width:350px;
+  min-height:100px;
+}
+
+#saved {
+  color: green !important;
+  padding: 1em;
+  font-weight: bold;
+  opacity: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
@@ -29,4 +44,3 @@ button {
     background: white;
   }
 }
-

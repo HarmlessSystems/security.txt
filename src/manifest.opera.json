@@ -16,6 +16,8 @@
   "background": {
     "scripts": [
       "js/browser-polyfill.js",
+      "js/minimatch.js",
+      "js/async.js",
       "js/global.js",
       "js/background.js"
     ]
