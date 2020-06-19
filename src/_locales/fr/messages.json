@@ -23,6 +23,22 @@
     "message": "Réinitialiser toutes les préférences aux valeurs par défaut",
     "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
   },
+  "host_blacklist": {
+    "message": "Exclure les sites suivants des contrôles (en les séparant des nouvelles lignes):",
+    "description" : "Label text for a list of sites to be excluded. (A-7)"
+  },
+  "reset": {
+    "message": "Réinitialiser",
+    "description" : "Text for reset button. (A-8)"
+  },
+  "save": {
+    "message": "Sauvegarder",
+    "description" : "Text for save button. (A-9)"
+  },
+  "saved": {
+    "message": "Changements sauvegardés",
+    "description" : "Text shown after saving preferences. (A-10)"
+  },
   "found_nothing": {
     "message": "Pas de fichier security.txt ou human.txt trouvé.",
     "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
@@ -42,6 +58,10 @@
   "found_security_and_humans_txt": {
     "message": "security.txt et human.txt trouvés",
     "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
+  },
+  "found_blacklist": {
+    "message": "Ce site correspond à votre liste d'exclusion, sans rechercher les fichiers security.txt ou humans.txt.",
+    "description" : "Text shown when the host matches the user-configurable exclusion list. (B-6)"
   },
   "copy_security_clipboard": {
     "message": "Copier security.txt dans le presse-papiers",
@@ -116,7 +136,35 @@
     "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
   },
   "release_title": {
-    "message": "Release Notes",
+    "message": "Notes de mise à jour",
     "description" : "Page title for release notes page shown on extension update."
+  },
+  "release_subtitle": {
+    "message": "Merci de mettre à jour l'extension security.txt du navigateur!",
+    "description" : "Subtitle for release notes page shown on extension update. (E-2)"
+  },
+  "release_intro": {
+    "message": "Bienvenue à ",
+    "description" : "Beginning of page headline. (E-3)"
+  },
+  "release_intro2": {
+    "message": "Ce communiqué comprend les changements suivants: ",
+    "description" : "Release page intro sentence. (E-4)"
+  },
+  "feature_headline": {
+    "message": "Nouvelles fonctionnalités et améliorations",
+    "description" : "Headline for list of new features. (E-5)"
+  },
+  "thanks_headline": {
+    "message": "Remerciements particuliers",
+    "description" : "Headline for list of people to thank. (E-6)"
+  },
+  "deprecations_headline": {
+    "message": "Dépréciations",
+    "description" : "Headline for list of features that have been deprecated. (E-7)"
+  },
+  "more_info_link": {
+    "message": "Vous pouvez trouver plus d'informations sur cette extension sur notre site web.",
+    "description" : "Link to website regarding extension details. (E-8)"
   }
 }
