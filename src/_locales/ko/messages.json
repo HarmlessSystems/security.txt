@@ -23,6 +23,22 @@
     "message": "모든 환경설정을 기본값으로 리셋",
     "description" : "Text for a button which resets all options/preferences to default values. (A-6)"
   },
+  "host_blacklist": {
+    "message": "다음의 사이트는 검사에서 제외합니다(새로운 줄로 구분): ",
+    "description" : "Label text for a list of sites to be excluded. (A-7)"
+  },
+  "reset": {
+    "message": "리셋",
+    "description" : "Text for reset button. (A-8)"
+  },
+  "save": {
+    "message": "저장하기",
+    "description" : "Text for save button. (A-9)"
+  },
+  "saved": {
+    "message": "변경사항이 저장되었습니다.",
+    "description" : "Text shown after saving preferences. (A-10)"
+  },
   "found_nothing": {
     "message": "security.txt 나 humans.txt 가 발견되지 않았습니다.",
     "description" : "Text shown when neither a humans.txt or security.txt file is found. (B-1)"
@@ -42,6 +58,10 @@
   "found_security_and_humans_txt": {
     "message": "security.txt 와 humans.txt 를 찾았습니다",
     "description" : "Text shown when both a humans.txt and a security.txt file has been found. (B-5)"
+  },
+  "found_blacklist": {
+    "message": "T본 사이트는 제외목록에 포함되므로 security.txt 나 humans.txt 파일을 찾지 않습니다.",
+    "description" : "Text shown when the host matches the user-configurable exclusion list. (B-6)"
   },
   "copy_security_clipboard": {
     "message": "security.txt 를 클립보드로 복사",
@@ -116,7 +136,35 @@
     "description" : "Text show before the Github page link where feedback can be submitted. (D-14)"
   },
   "release_title": {
-    "message": "Release Notes",
-    "description" : "Page title for release notes page shown on extension update."
+    "message": "릴리스 노트",
+    "description" : "Page title for release notes page shown on extension update. (E-1)"
+  },
+  "release_subtitle": {
+    "message": "security.txt 브라우저 익스텐션을 업데이트해주셔서 감사합니다!",
+    "description" : "Subtitle for release notes page shown on extension update. (E-2)"
+  },
+  "release_intro": {
+    "message": "환영합니다 ",
+    "description" : "Beginning of page headline. (E-3)"
+  },
+  "release_intro2": {
+    "message": "이 릴리스에는 다음의 변경 사항이 포함되어 있습니다.",
+    "description" : "Release page intro sentence. (E-4)"
+  },
+  "feature_headline": {
+    "message": "새로 추가된 기능 및 개선 사항",
+    "description" : "Headline for list of new features. (E-5)"
+  },
+  "thanks_headline": {
+    "message": "도움을 주신 분들께 특별한 감사를 드립니다.",
+    "description" : "Headline for list of people to thank. (E-6)"
+  },
+  "deprecations_headline": {
+    "message": "지원 중단목록",
+    "description" : "Headline for list of features that have been deprecated. (E-7)"
+  },
+  "more_info_link": {
+    "message": "본 익스텐션에 대한 더 많은 정보는 저희 웹사이트에서 확인하실 수 있습니다.",
+    "description" : "Link to website regarding extension details. (E-8)"
   }
 }
