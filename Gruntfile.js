@@ -190,9 +190,25 @@ module.exports = function(grunt) {
     });
   });
 
+  // All locales should have the same keys as the english version.
+  grunt.registerTask('i18n', 'Sanity check i18n files', () => {
+    const {isEqual} = require('lodash/lang');
+    const keys = Object.keys(grunt.file.readJSON('src/_locales/en/messages.json')).sort();
+    grunt.file.recurse('src/_locales', (abspath) => {
+      const langKeys = Object.keys(grunt.file.readJSON(abspath)).sort();
+      if (!isEqual(langKeys, keys)) {
+        grunt.log.error(abspath + ' has missing or additional keys');
+        process.exit(1);
+      } else {
+        grunt.log.ok(abspath);
+      }
+    }); 
+  });
+
   grunt.registerTask('lint', [
     'jshint:extension',
     'jshint:node',
+    'i18n'
   ]);
 
   grunt.registerTask('default', [
