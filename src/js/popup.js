@@ -3,10 +3,14 @@
 window.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(new URL(window.location).search);
 
+  const security = params.get('security');
+  const securityMatch = /.*\/security\.txt$/;
   const securityTxt = document.querySelector('#securityTxt > textarea');
   const securityTab = document.querySelector('#securityTabLabel');
   const securityInput = document.querySelector('#securityTab');
 
+  const humans = params.get('humans');
+  const humansMatch = /.*\/humans\.txt$/;
   const humansTxt = document.querySelector('#humansTxt > textarea');
   const humansTab = document.querySelector('#humansTabLabel');
   const humansInput = document.querySelector('#humansTab');
@@ -15,24 +19,23 @@ window.addEventListener('DOMContentLoaded', () => {
   const clipboardHumans = document.querySelector('#humansTxt button');
   const msgTimeout = 3000;
 
-
-  if (params.get('security')) {
-    fetch(params.get('security')).then((result) => {
+  if (security && security.match(securityMatch)) {
+    fetch(security).then((result) => {
       result.text().then((text) => {
         securityTxt.value = text;
-        securityTab.title = params.get('security');
+        securityTab.title = security;
       });
     });
   } else {
     securityTab.style.display = 'none';
   }
 
-  if (params.get('humans')) {
-    fetch(params.get('humans')).then((result) => {
+  if (humans && humans.match(humansMatch)) {
+    fetch(humans).then((result) => {
       result.text().then((text) => {
         humansTxt.value = text;
-        humansTab.title = params.get('humans');
-        if (!params.get('security')) {
+        humansTab.title = humans;
+        if (!security) {
           securityInput.checked = false;
           humansInput.checked = true;
         }

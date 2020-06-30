@@ -50,7 +50,24 @@ module.exports = function(grunt) {
             dest: `build/${browser}/js/browser-polyfill.js`
           };
         })
-      }
+      },
+      polyfillMap: {
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/webextension-polyfill/dist/browser-polyfill.js.map',
+            dest: `build/${browser}/js/browser-polyfill.js.map`
+          };
+        })
+      },
+      async: {
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/async/dist/async.js',
+            dest: `build/${browser}/js/async.js`
+          };
+        })
+      },
+
     },
     jshint: {
       extension: {
@@ -113,6 +130,22 @@ module.exports = function(grunt) {
           dest: '/'
         }]
       }
+    },
+    browserify: {
+      minimatch: {
+        options: {
+          banner: "// browserify'd build of https://github.com/isaacs/minimatch",
+          browserifyOptions: {
+            standalone: 'minimatch'
+          }
+        },
+        files: browsers.map((browser) => {
+          return {
+            src: 'node_modules/minimatch/minimatch.js',
+            dest: `build/${browser}/js/minimatch.js`
+          };
+        })
+      }
     }
   });
 
@@ -157,9 +190,25 @@ module.exports = function(grunt) {
     });
   });
 
+  // All locales should have the same keys as the english version.
+  grunt.registerTask('i18n', 'Sanity check i18n files', () => {
+    const {isEqual} = require('lodash/lang');
+    const keys = Object.keys(grunt.file.readJSON('src/_locales/en/messages.json')).sort();
+    grunt.file.recurse('src/_locales', (abspath) => {
+      const langKeys = Object.keys(grunt.file.readJSON(abspath)).sort();
+      if (!isEqual(langKeys, keys)) {
+        grunt.log.error(abspath + ' has missing or additional keys');
+        process.exit(1);
+      } else {
+        grunt.log.ok(abspath);
+      }
+    }); 
+  });
+
   grunt.registerTask('lint', [
     'jshint:extension',
     'jshint:node',
+    'i18n'
   ]);
 
   grunt.registerTask('default', [
@@ -169,7 +218,9 @@ module.exports = function(grunt) {
     'manifests',
     'copy:src',
     'copy:polyfill',
+    'copy:async',
     'copy:misc',
+    'browserify:minimatch',
     'quirks'
   ]);
 

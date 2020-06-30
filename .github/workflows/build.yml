@@ -1,0 +1,13 @@
+name: Build
+on: [pull_request, push]
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: yarn
+    - name: lint
+      run: yarn lint
+    - name: build
+      run: yarn build

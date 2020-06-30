@@ -1,7 +1,9 @@
 /* jshint unused: false */
 
 const defaultOptions = {
-  check_humanstxt: 'ON'
+  check_humanstxt: 'ON',
+  host_blacklist: `http*://feedly.com
+https://id.atlassian.com`
 };
 
 function i18n(msg) {
@@ -51,5 +53,8 @@ function i18nHydrate() {
   });
   document.querySelectorAll('.current-year').forEach((element) => {
     element.innerText = (new Date()).getFullYear();
+  });
+  document.querySelectorAll('.current-version').forEach((element) => {
+    element.innerText = 'v' + browser.runtime.getManifest().version;
   });
 }
