@@ -21,7 +21,7 @@
     "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^2.1.0",
-    "grunt-mkdir": "^1.0.0",
+    "grunt-mkdir": "^1.1.0",
     "load-grunt-tasks": "^5.1.0",
     "lodash": "^4.17.19",
     "minimatch": "^3.0.4",
