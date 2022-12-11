@@ -1,6 +1,6 @@
 'use strict';
 
-const browsers = ['firefox', 'chrome', 'opera', 'edge'];
+const browsers = ['firefox', 'chrome', 'edge'];
 
 module.exports = function(grunt) {
  
@@ -104,17 +104,6 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'build/chrome',
-          src: ['**'],
-          dest: '/'
-        }]
-      },
-      opera: {
-        options: {
-          archive: `build/release/${packageJSON.name}-${packageJSON.version}-opera.zip`
-        },
-        files: [{
-          expand: true,
-          cwd: 'build/opera',
           src: ['**'],
           dest: '/'
         }]

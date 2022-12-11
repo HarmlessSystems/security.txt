@@ -1,6 +1,6 @@
 {
   "name": "security.txt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Cross-platform browser extension for security.txt and humans.txt files.",
   "homepage": "https://www.harmless.systems/products/security-txt.html",
   "main": "Gruntfile.js",
@@ -25,6 +25,6 @@
     "load-grunt-tasks": "^5.1.0",
     "lodash": "^4.17.21",
     "minimatch": "^3.0.4",
-    "webextension-polyfill": "^0.6.0"
+    "webextension-polyfill": "^0.10.0"
   }
 }
