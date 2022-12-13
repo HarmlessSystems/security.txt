@@ -9,7 +9,7 @@ function setBadge(tabId, title, icon, action, popup) {
 
   browser.pageAction.setPopup({
     tabId,
-    popup: popup
+    popup
   });
 
   browser.pageAction.setIcon({
@@ -101,7 +101,7 @@ function fetchFilesFromHost(context, next) {
       }
       // XXX I've encountered at least one site (netflix.com) where a HEAD 
       // doesn't work on a humans.txt file (403 response). While odd, in all 
-      // fairness, the "humans.txt" files is intedned for "humans" who wouldn't
+      // fairness, the "humans.txt" files is intended for "humans" who wouldn't
       // be making HEAD requests but rather navigating to the URL manually.
       const url = `${protocol}//${host}/humans.txt`;
       fetch(url).then((result) => {
@@ -227,7 +227,7 @@ function runtimeOnInstalled(details) {
   try {
     browser.tabs.onUpdated.addListener(tabsOnUpdated, {
       urls: ['http://*/*', 'https://*/*'],
-      properties: ['status']
+      properties: ['url']
     });
   } catch (e) {
     // Chrome/Opera/Edge do not support filters on tabs.onUpdated
